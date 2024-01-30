@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="今天为初识哈希表，四道题目均为easy。简单写一下思路。  有效的字母异位词 (Easy) 两个数组的交集 (Easy) 快乐数 (Easy) 两数之和 (Easy)  242. 有效的字母异位词 (Easy)简单题。字母异位词指构成两个单词的字母相同、数量相同，很快联想到可将字母作为key，次数作为value，显著降低时间复杂度。《编程珠玑》里有一个类似的例子，用磁盘空间的地址存放电话号码，我很">
+<meta name="description" content="上班好累，九点开始，看着题解十一点才做完。简单说下内容，不详细写了。 题目列表 四数相加II  赎金信  三数之和  四数之和  454. 四数相加II把前两个数组之和放进hashmap，value为和出现的次数。遍历后两个数组，target-nums3-nums4在map中时，count+&#x3D;value。 383. 赎金信和昨天的第一题一样，不赘述。 15. 三数之和用hashmap会很">
 <meta property="og:type" content="article">
-<meta property="og:title" content="组团刷题Day6 哈希表 part01">
-<meta property="og:url" content="http://example.com/2024/01/29/%E7%BB%84%E5%9B%A2%E5%88%B7%E9%A2%98Day6-%E5%93%88%E5%B8%8C%E8%A1%A8%20part01/index.html">
+<meta property="og:title" content="组团刷题Day7 哈希表 part02">
+<meta property="og:url" content="http://example.com/2024/01/30/%E7%BB%84%E5%9B%A2%E5%88%B7%E9%A2%98Day7-%E5%93%88%E5%B8%8C%E8%A1%A8-part02/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="今天为初识哈希表，四道题目均为easy。简单写一下思路。  有效的字母异位词 (Easy) 两个数组的交集 (Easy) 快乐数 (Easy) 两数之和 (Easy)  242. 有效的字母异位词 (Easy)简单题。字母异位词指构成两个单词的字母相同、数量相同，很快联想到可将字母作为key，次数作为value，显著降低时间复杂度。《编程珠玑》里有一个类似的例子，用磁盘空间的地址存放电话号码，我很">
+<meta property="og:description" content="上班好累，九点开始，看着题解十一点才做完。简单说下内容，不详细写了。 题目列表 四数相加II  赎金信  三数之和  四数之和  454. 四数相加II把前两个数组之和放进hashmap，value为和出现的次数。遍历后两个数组，target-nums3-nums4在map中时，count+&#x3D;value。 383. 赎金信和昨天的第一题一样，不赘述。 15. 三数之和用hashmap会很">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-01-29T13:37:25.000Z">
-<meta property="article:modified_time" content="2024-01-29T14:08:13.560Z">
+<meta property="article:published_time" content="2024-01-30T14:57:23.000Z">
+<meta property="article:modified_time" content="2024-01-30T15:08:02.751Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="LeetCode">
 <meta name="twitter:card" content="summary">
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://example.com/2024/01/29/组团刷题Day6-哈希表 part01/"/>
+  <link rel="canonical" href="http://example.com/2024/01/30/组团刷题Day7-哈希表-part02/"/>
 
 
 
 
 
-  <title>组团刷题Day6 哈希表 part01 | Hexo</title>
+  <title>组团刷题Day7 哈希表 part02 | Hexo</title>
   
 
 
@@ -233,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/01/29/%E7%BB%84%E5%9B%A2%E5%88%B7%E9%A2%98Day6-%E5%93%88%E5%B8%8C%E8%A1%A8%20part01/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/01/30/%E7%BB%84%E5%9B%A2%E5%88%B7%E9%A2%98Day7-%E5%93%88%E5%B8%8C%E8%A1%A8-part02/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -250,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">组团刷题Day6 哈希表 part01</h1>
+          <h1 class="post-title" itemprop="name headline">组团刷题Day7 哈希表 part02</h1>
         
 
         <div class="post-meta">
@@ -262,8 +262,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2024-01-29T21:37:25+08:00">
-                2024-01-29
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2024-01-30T22:57:23+08:00">
+                2024-01-30
               </time>
             
 
@@ -300,21 +300,20 @@
       
 
       
-        <p>今天为初识哈希表，四道题目均为easy。简单写一下思路。</p>
-<ol start="242">
-<li>有效的字母异位词 (Easy)</li>
-<li>两个数组的交集 (Easy)</li>
-<li>快乐数 (Easy)</li>
-<li>两数之和 (Easy)</li>
+        <p>上班好累，九点开始，看着题解十一点才做完。简单说下内容，不详细写了。</p>
+<h1 id="题目列表"><a href="#题目列表" class="headerlink" title="题目列表"></a>题目列表</h1><ol start="454">
+<li>四数相加II </li>
+<li>赎金信 </li>
+<li>三数之和 </li>
+<li>四数之和</li>
 </ol>
-<h1 id="242-有效的字母异位词-Easy"><a href="#242-有效的字母异位词-Easy" class="headerlink" title="242. 有效的字母异位词 (Easy)"></a>242. 有效的字母异位词 (Easy)</h1><p>简单题。字母异位词指构成两个单词的字母相同、数量相同，很快联想到可将字母作为key，次数作为value，显著降低时间复杂度。<br>《编程珠玑》里有一个类似的例子，用磁盘空间的地址存放电话号码，我很喜欢。<br>本题编程并不复杂，甚至不涉及今天新提到的数据结构（因为数组本质上就是一种哈希表），但它提供了一种思路：即把值作为key，mark作为value。在特殊情况下反而能降低时间复杂度，我愿称之为倒反天罡。</p>
-<h1 id="349-两个数组的交集-Easy"><a href="#349-两个数组的交集-Easy" class="headerlink" title="349. 两个数组的交集 (Easy)"></a>349. 两个数组的交集 (Easy)</h1><p>求两个数组的交集可以遍历nums1，使nums1每一个元素与nums2的每一个元素进行对比，从而暴力求解。可以看出第一层遍历是必不可少的，不过引入Set可以去掉第二层遍历(使用contains函数进行时间复杂度为O(1)的对比)。</p>
-<p>解法如下：将nums1放入Set，遍历nums2，如果元素被包含在Set中，则记录。最后输出记录的数组。</p>
-<p>由于题目要求数组不重复，所以也可以将记录放在Set中，最后遍历Set或使用stream<br>操作输出数组即可。</p>
-<h1 id="202-快乐数-Easy"><a href="#202-快乐数-Easy" class="headerlink" title="202. 快乐数 (Easy)"></a>202. 快乐数 (Easy)</h1><p>一眼遍历，不过今天是哈希表专题，所以还是用哈希表完成解答吧。<br>本题重点在于判断快乐数的条件。当想到n&#x3D;1返回true，n与历史发生重复返回false时，自然想到使用Set进行重复判断。其余不再赘述。</p>
-<h1 id="1-两数之和-Easy"><a href="#1-两数之和-Easy" class="headerlink" title="1. 两数之和 (Easy)"></a>1. 两数之和 (Easy)</h1><p>本题费了好一番功夫，一度怀疑题目难度给错了，最后终于意识到题目要求两数之和而非多数之和。<del>心好累</del><br>两数之和就简单多了，暴力破解不再赘述，本题依旧使用哈希表进行操作。不同的是前几题使用HashSet居多，而本题因为需要存储下标和值，所以要使用HashMap。</p>
-<p>根据题目要求，使用两层遍历，替换第二层遍历为HashMap。因为要根据值查找下标，所以数组值作为Key，下标作为Value。其余不再赘述。</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>我意识到，实际上今天大部分题目解法都是由暴力解法延伸出来的，完全依赖于无序哈希表查询时间复杂度为O(1)的特性。今后遇到此类问题可尝试用哈希表求解。</p>
+<h1 id="454-四数相加II"><a href="#454-四数相加II" class="headerlink" title="454. 四数相加II"></a>454. 四数相加II</h1><p>把前两个数组之和放进hashmap，value为和出现的次数。遍历后两个数组，target-nums3-nums4在map中时，count+&#x3D;value。</p>
+<h1 id="383-赎金信"><a href="#383-赎金信" class="headerlink" title="383. 赎金信"></a>383. 赎金信</h1><p>和昨天的第一题一样，不赘述。</p>
+<h1 id="15-三数之和"><a href="#15-三数之和" class="headerlink" title="15. 三数之和"></a>15. 三数之和</h1><p>用hashmap会很麻烦，于是根据题解用双指针。</p>
+<p>首先对数组排序，然后遍历数组，同时生成left、right两个指针。i、left、right的值相加为0时，记录这三个下标。<br>如果不为0，则根据大小移动left或right，直到right不大于left为止。</p>
+<p>另外还有些去重操作，不赘述。</p>
+<h1 id="18-四数之和"><a href="#18-四数之和" class="headerlink" title="18. 四数之和"></a>18. 四数之和</h1><p>同15，不过多加一层循环，不赘述。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>今天题目难度开始上升，上班时间也没空做，精力有些不足。再接再厉吧。</p>
 
       
     </div>
@@ -345,8 +344,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2024/01/28/%E7%BB%84%E5%9B%A2%E5%88%B7%E9%A2%98Day4-%E9%93%BE%E8%A1%A8%E6%93%8D%E4%BD%9C%20part02/" rel="next" title="组团刷题Day4 链表操作2">
-                <i class="fa fa-chevron-left"></i> 组团刷题Day4 链表操作2
+              <a href="/2024/01/29/%E7%BB%84%E5%9B%A2%E5%88%B7%E9%A2%98Day6-%E5%93%88%E5%B8%8C%E8%A1%A8%20part01/" rel="next" title="组团刷题Day6 哈希表 part01">
+                <i class="fa fa-chevron-left"></i> 组团刷题Day6 哈希表 part01
               </a>
             
           </div>
@@ -354,10 +353,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2024/01/30/%E7%BB%84%E5%9B%A2%E5%88%B7%E9%A2%98Day7-%E5%93%88%E5%B8%8C%E8%A1%A8-part02/" rel="prev" title="组团刷题Day7 哈希表 part02">
-                组团刷题Day7 哈希表 part02 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -480,7 +475,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#242-%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D-Easy"><span class="nav-number">1.</span> <span class="nav-text">242. 有效的字母异位词 (Easy)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#349-%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86-Easy"><span class="nav-number">2.</span> <span class="nav-text">349. 两个数组的交集 (Easy)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#202-%E5%BF%AB%E4%B9%90%E6%95%B0-Easy"><span class="nav-number">3.</span> <span class="nav-text">202. 快乐数 (Easy)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C-Easy"><span class="nav-number">4.</span> <span class="nav-text">1. 两数之和 (Easy)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E5%88%97%E8%A1%A8"><span class="nav-number">1.</span> <span class="nav-text">题目列表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#454-%E5%9B%9B%E6%95%B0%E7%9B%B8%E5%8A%A0II"><span class="nav-number">2.</span> <span class="nav-text">454. 四数相加II</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#383-%E8%B5%8E%E9%87%91%E4%BF%A1"><span class="nav-number">3.</span> <span class="nav-text">383. 赎金信</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#15-%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C"><span class="nav-number">4.</span> <span class="nav-text">15. 三数之和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#18-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C"><span class="nav-number">5.</span> <span class="nav-text">18. 四数之和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">6.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
